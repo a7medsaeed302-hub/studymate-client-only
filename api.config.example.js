@@ -8,6 +8,6 @@ window.STUDYMATE_API_CONFIG = {
     apiKeys: ["", ""],
     models: ["google/gemini-2.5-flash", "openai/gpt-4.1-mini"],
     appUrl: "",
-    appName: "StudyMate"
+    appName: "Thanawyiah"
   }
 };

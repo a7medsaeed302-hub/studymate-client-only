@@ -1,0 +1,29 @@
+{
+  "brand": "Thanawyiah",
+  "direction": "rtl-first",
+  "colors": {
+    "inkNavy": "#1B2456",
+    "atlasGold": "#D6A646",
+    "paper": "#FFFDF7",
+    "mist": "#F2F4FB",
+    "studyBlue": "#3A50D1",
+    "success": "#0F906A",
+    "danger": "#C0392B"
+  },
+  "typography": {
+    "arabicDisplay": "Cairo",
+    "arabicBody": "IBM Plex Sans Arabic",
+    "latinBody": "DM Sans",
+    "rules": "استخدم Cairo للعناوين وIBM Plex Sans Arabic للمتن العربي وDM Sans للمحتوى الإنجليزي؛ لا تستخدم Inter كخط وحيد."
+  },
+  "layout": {
+    "desktopLessonPath": "مسار ثابت ظاهر: المصدر ثم التحليل ثم الملزمة ثم الكويز ثم المراجعة",
+    "surfaces": "صفحات ملف دراسي كريمية بحواف حبرية دقيقة وختم ذهبي صغير",
+    "radius": "زوايا متباينة بين 8 و20 بكسل بدل توحيد بطاقات SaaS"
+  },
+  "motion": {
+    "duration": "160-280ms",
+    "easing": "cubic-bezier(0.23, 1, 0.32, 1)",
+    "reducedMotion": true
+  }
+}

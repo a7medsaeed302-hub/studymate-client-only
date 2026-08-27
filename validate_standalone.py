@@ -5,7 +5,8 @@ import tempfile
 
 root = Path(__file__).parent
 html = (root / "index.html").read_text(encoding="utf-8")
-config = (root / "api.config.js").read_text(encoding="utf-8")
+config_path = root / "api.config.js"
+config = (config_path if config_path.exists() else root / "api.config.example.js").read_text(encoding="utf-8")
 
 assert html.lstrip().lower().startswith("<!doctype html>"), "index.html must be a complete document"
 assert html.strip().lower().endswith("</html>"), "index.html must end with </html>"
@@ -26,4 +27,4 @@ for index, script in enumerate(scripts):
     if result.returncode:
         raise SystemExit(f"inline script {index} failed:\n{result.stderr}")
 
-print("Standalone HTML, JavaScript, local configuration, and assets validated")
+print("Standalone HTML, JavaScript, safe configuration template, and assets validated")

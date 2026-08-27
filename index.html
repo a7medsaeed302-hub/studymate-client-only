@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>StudyMate — اختبارات وملفات شرح تفاعلية بالذكاء الاصطناعي</title>
+<title>Thanawyiah 🎓 — منصة الثانوية الذكية</title>
 <link rel="icon" href="/manus-storage/studymate-mark_e13dfdb0.png">
 <style>
 /* Design system: أطلس المذاكرة — واجهة تحريرية دافئة، نيلي للثقة وذهبي أطلسي للإنجاز. */
@@ -724,7 +724,7 @@ html,body{overflow-x:hidden}
 <div class="atlas-shell-note">أطلس المذاكرة · فهم قبل الحفظ</div>
 
 <header class="topbar">
-  <div class="brand"><span class="brand-mark">✦</span><span class="brand-text">StudyMate</span></div>
+  <div class="brand"><span class="brand-mark">✦</span><span class="brand-text">Thanawyiah <span aria-hidden="true">🎓</span></span></div>
   <div class="topbar-nav">
     <button class="tbtn icon-only" id="darkToggle" title="الوضع الليلي" aria-label="تبديل الوضع الليلي">🌙</button>
     <button class="tbtn" id="navLibrary">📚 مكتبتي</button>
@@ -740,7 +740,7 @@ html,body{overflow-x:hidden}
   <!-- ============ CREATE VIEW ============ -->
   <section id="createView" class="view active">
     <div class="hero">
-      <div class="hero-eyebrow" id="heroEyebrow">StudyMate · اختبارات ذكية</div>
+      <div class="hero-eyebrow" id="heroEyebrow">THANAWYIAH · ثانوية ذكية</div>
       <h1 id="heroTitle">حوّل أي درس إلى اختبار ذكي في دقيقة</h1>
       <p id="heroSub">فيديو يوتيوب، صورة سبورة، ملف PDF، أو ملخص HTML — يخرج اختبارًا أو ملزمة باللغة المناسبة للمصدر، بأسئلة تحليلية وشرح لكل إجابة، مع دعم المفردات والجرامر والقراءة والمشتقات.</p>
       <div class="hero-route"><b>١</b><span>ابدأ بالمصدر، واترك الأطلس يرتب طريق المراجعة.</span></div>
@@ -1192,7 +1192,7 @@ html,body{overflow-x:hidden}
     </div>
   </section>
 
-  <footer class="foot">صُنع بواسطة StudyMate · المحتوى يُولّد بالذكاء الاصطناعي فراجع دايمًا المصدر الأصلي</footer>
+  <footer class="foot">Thanawyiah 🎓 · المحتوى يُولّد بالذكاء الاصطناعي، فراجع المصدر الأصلي دائمًا</footer>
 </div>
 
 <!-- ============ SETTINGS MODAL ============ -->
@@ -4394,7 +4394,7 @@ function startQuiz(quiz) {
   setupTimerForQuiz();
 
   // تزيين رأس شاشة الاختبار: شريط الريبون بعنوان الاختبار + شارة مستوى الصعوبة الغالبة
-  $('#quizRibbon').textContent = quiz.title || 'اختبار StudyMate';
+  $('#quizRibbon').textContent = quiz.title || 'اختبار Thanawyiah';
   const diffCounts = {};
   quiz.questions.forEach(q => { const d = q.difficulty || ''; if (d) diffCounts[d] = (diffCounts[d] || 0) + 1; });
   const topDiff = Object.keys(diffCounts).sort((a, b) => diffCounts[b] - diffCounts[a])[0];
@@ -4800,7 +4800,7 @@ function downloadQuizJsonFile(quiz) {
   const exportData = {
     format: 'studymate-quiz-v1',
     language: quizLanguage(quiz),
-    title: quiz.title || 'StudyMate Quiz',
+    title: quiz.title || 'Thanawyiah Quiz',
     curriculumProfile: quiz.curriculumProfile || '',
     examBlueprint: quiz.examBlueprint || 'balanced',
     difficulty: quiz.difficulty || '',
